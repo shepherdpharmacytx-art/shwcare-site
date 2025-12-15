@@ -3,82 +3,142 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>SHW Care | Contact</title>
-  <meta name="description" content="Shepherd Health & Wellness (SHW) — prescription-guided wellness programs with simple intake and licensed pharmacy dispensing."/>
+  <title>Contact | SHW</title>
+  <meta name="description" content="Shepherd Health & Wellness (SHW)"/>
   <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="assets/shw-logo.svg" type="image/svg+xml"/>
 </head>
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html" aria-label="SHW Home">
-      <span class="brand-badge">SHW</span>
-      <span>Shepherd Health &amp; Wellness</span>
-    </a>
-    <nav class="menu" aria-label="Primary">
-      <a class="" href="programs.html">Programs</a>
-      <a class="" href="how-it-works.html">How It Works</a>
-      <a class="" href="providers.html">For Providers</a>
-      <a class="active" href="contact.html">Contact</a>
-      <a class="btn secondary" href="start.html">Start Intake</a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-
-<section class="hero">
-  <div class="kicker">Contact</div>
-  <div class="h1">Get in touch.</div>
-  <p class="sub">For fastest service, email support. Do not include medical information in email or web forms.</p>
-</section>
-
-<section class="section grid">
-  <div class="card" style="grid-column: span 6;">
-    <h3>Support</h3>
-    <p>Email: <a href="mailto:support@shwcare.com">support@shwcare.com</a></p>
-    <p>Phone: (214) 484-1393</p>
-    <p>Toll Free: (844) 703-1780</p>
-    <p>Fax: (469) 825-4048</p>
-  </div>
-  <div class="card gray" style="grid-column: span 6;">
-    <h3>Pharmacy address (SSP)</h3>
-    <p>Shepherd Specialty Pharmacy</p>
-    <p>1534-A N Hampton Road Ste 100</p>
-    <p>DeSoto, TX 75115</p>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h4>Shepherd Health &amp; Wellness (SHW)</h4>
-        <p class="small">Program coordination and intake routing. Prescription items (if applicable) are dispensed by appropriately licensed pharmacy partners pursuant to a valid prescription.</p>
-        <div class="notice" style="margin-top:10px">
-          <strong>PHI notice:</strong> Do not submit medical information through this website. Prescription details are handled via secure channels (eRx / pharmacy systems / secure portals).
-        </div>
+  <div class="topbar">
+    <div class="container">
+      <div class="left">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 6-4 10-8 10S4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="2"/></svg>
+          Educational-first wellness programs
+        </span>
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Provider-directed • Rx where appropriate
+        </span>
       </div>
-      <div>
-        <h4>Policies</h4>
-        <p><a href="shipping.html">Shipping</a></p>
-        <p><a href="refund.html">Refund</a></p>
-        <p><a href="privacy.html">Privacy</a></p>
-        <p><a href="terms.html">Terms</a></p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Email: <a href="mailto:support@shwcare.com">support@shwcare.com</a></p>
-        <p>Phone: (214) 484-1393</p>
-        <p>Toll Free: (844) 703-1780</p>
+      <div class="right">
+        <a href="start.html" class="badge">Start Intake</a>
       </div>
     </div>
-    <hr/>
-    <p class="small">© 2025 Shepherd Health &amp; Wellness. SHW is a program coordination platform operated by Stamatis Group LLC. Pharmacy services are provided by licensed pharmacy entities as applicable.</p>
   </div>
-</footer>
 
+  <div class="nav">
+    <div class="container">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"><span>SHW</span></div>
+        <div class="name">
+          <strong>Shepherd Health & Wellness</strong>
+          <small>Powered by Shepherd Specialty Pharmacy network</small>
+        </div>
+      </div>
+
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="products.html">Therapies</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="navcta">
+        <a class="btn secondary" href="providers.html">Providers</a>
+        <a class="btn primary" href="start.html">Start intake</a>
+      </div>
+    </div>
+  </div>
+  <main>
+
+<section class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="lead">Questions about onboarding, shipping, or program fit? Send a message and we’ll respond quickly.</p>
+
+    <div class="grid2">
+      <div class="card pad">
+        <h3>Send a message</h3>
+        <form class="form" action="mailto:support@shwcare.com" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required/>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="you@email.com" type="email" required/>
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" placeholder="Tell us what you need (avoid sensitive medical details here)."></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+        <div class="notice" style="margin-top:12px">Please avoid sending PHI through this contact form. We can direct you to the correct secure channel.</div>
+      </div>
+
+      <div class="card pad">
+        <h3>Support</h3>
+        <p><strong>Email:</strong> support@shwcare.com</p>
+        <p><strong>Hours:</strong> Mon–Fri</p>
+        <p style="margin-top:10px;color:var(--muted)">
+          If you are a clinic and want onboarding, include your practice name, state(s), and your preferred prescribing method (eRx/fax).
+        </p>
+        <img src="assets/hero.svg" alt="SHW illustration" style="width:100%;border-radius:16px;border:1px solid var(--border);margin-top:12px"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <img src="assets/shw-logo.svg" alt="SHW logo" style="width:44px;height:44px;border-radius:12px"/>
+          <div>
+            <div style="font-weight:800;">Shepherd Health & Wellness</div>
+            <small>Consumer education + provider-directed access to wellness therapies.</small>
+          </div>
+        </div>
+
+        <hr class="sep"/>
+
+        <small>
+          <strong>Important:</strong> This website provides general educational information and is not medical advice.
+          If a prescription is required, therapy is provided only pursuant to a valid prescription from a licensed practitioner
+          and fulfilled by a licensed pharmacy/partner in your state as applicable.
+        </small>
+      </div>
+
+      <div class="cols">
+        <div>
+          <h5>Links</h5>
+          <ul>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="products.html">Therapies</a></li>
+            <li><a href="how-it-works.html">How it works</a></li>
+            <li><a href="providers.html">Provider page</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Policies</h5>
+          <ul>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="refund.html">Refund</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:14px;">
+      <small>© 2025 Shepherd Health & Wellness (SHW). All rights reserved.</small>
+    </div>
+  </footer>
 </body>
 </html>
