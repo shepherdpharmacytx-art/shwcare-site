@@ -1,278 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Programs | SHW</title>
-  <meta name="description" content="Shepherd Health & Wellness (SHW)"/>
-  <link rel="stylesheet" href="assets/styles.css"/>
-  <link rel="icon" href="assets/shw-logo.svg" type="image/svg+xml"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Programs | SHWCARE</title>
+<meta content="Shepherd Health &amp; Wellness (SHW)" name="description"/>
+<link href="assets/styles.css" rel="stylesheet"/>
+<link href="assets/shw-logo.svg" rel="icon" type="image/svg+xml"/>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container">
-      <div class="left">
-        <span class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 6-4 10-8 10S4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="2"/></svg>
+<div class="topbar">
+<div class="container">
+<div class="left">
+<span class="badge">
+<svg fill="none" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 6-4 10-8 10S4 18 4 12V6l8-4z" stroke="currentColor" stroke-width="2"></path></svg>
           Educational-first wellness programs
         </span>
-        <span class="badge">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+<span class="badge">
+<svg fill="none" viewbox="0 0 24 24"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
           Provider-directed • Rx where appropriate
         </span>
-      </div>
-      <div class="right">
-        <a href="start.html" class="badge">Start Intake</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="nav">
-    <div class="container">
-      <div class="brand">
-        <div class="mark" aria-hidden="true"><span>SHW</span></div>
-        <div class="name">
-          <strong>Shepherd Health & Wellness</strong>
-          <small>Powered by Shepherd Specialty Pharmacy network</small>
-        </div>
-      </div>
-
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="programs.html">Programs</a>
-        <a href="products.html">Therapies</a>
-        <a href="how-it-works.html">How it works</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="navcta">
-        <a class="btn secondary" href="providers.html">Providers</a>
-        <a class="btn primary" href="start.html">Start intake</a>
-      </div>
-    </div>
-  </div>
-  <main>
-
-<section class="section">
-  <div class="container">
-    <h2>Programs</h2>
-    <p class="lead">Choose a 30-day or 90-day package. <strong>Dose and final therapy are clinician-determined</strong> based on your intake and clinical review.</p>
-
-    <div class="controls">
-      <div class="control">
-        <label for="search">Search</label>
-        <input id="search" type="search" placeholder="Search (e.g., semaglutide, BPC-157, NAD+)"/>
-      </div>
-      <div class="control">
-        <label for="programFilter">Category</label>
-        <select id="programFilter"></select>
-      </div>
-      <div class="control">
-        <label for="priceToggle">Pricing</label>
-        <button id="priceToggle" class="btn secondary" type="button">Unlock pricing</button>
-        <div class="hint">Pricing unlock is a lightweight gate for quoting (frontend-only).</div>
-      </div>
-    </div>
-
-    <div id="grid" class="grid"></div>
-
-    <div class="note">
-      <h3>Important</h3>
-      <ul>
-        <li>Payment does not guarantee a prescription. Licensed providers make independent clinical decisions.</li>
-        <li>Some states require a brief video visit; most reviews are asynchronous.</li>
-        <li>Rx-only products ship only after provider approval and pharmacy verification.</li>
-      </ul>
-    </div>
-
-    <div id="loginModal" class="modal" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-head">
-          <h3 id="modalTitle">Unlock pricing</h3>
-          <button id="closeModal" class="iconbtn" aria-label="Close">×</button>
-        </div>
-        <p class="muted">This is a lightweight gate for internal quoting. True access control will be enforced in the backend later.</p>
-        <label class="field">
-          <span>Access code</span>
-          <input id="accessCode" type="password" placeholder="Enter code"/>
-        </label>
-        <div class="row">
-          <button id="unlockBtn" class="btn primary" type="button">Unlock</button>
-          <button id="lockBtn" class="btn secondary" type="button">Lock</button>
-        </div>
-        <p class="hint">Change the access code inside <code>programs.html</code>.</p>
-      </div>
-    </div>
-
-    <script>
-      const API_BASE = "https://api.shwcare.com";
-      const PRICE_ACCESS_KEY = "shw_price_access";
-      const ACCESS_CODE = "shwcare"; // change this
-
-      function hasPriceAccess(){ return localStorage.getItem(PRICE_ACCESS_KEY)==="1"; }
-      function setPriceAccess(on){ localStorage.setItem(PRICE_ACCESS_KEY, on ? "1" : "0"); }
-
-      const modal = document.getElementById("loginModal");
-      const priceToggle = document.getElementById("priceToggle");
-      const closeModal = document.getElementById("closeModal");
-      const unlockBtn = document.getElementById("unlockBtn");
-      const lockBtn = document.getElementById("lockBtn");
-      const accessCode = document.getElementById("accessCode");
-
-      function openModal(){ modal.classList.add("show"); modal.setAttribute("aria-hidden","false"); accessCode.focus(); }
-      function close(){ modal.classList.remove("show"); modal.setAttribute("aria-hidden","true"); accessCode.value=""; }
-
-      function syncPriceToggle(){
-        priceToggle.textContent = hasPriceAccess() ? "Pricing unlocked (click to lock)" : "Unlock pricing";
-      }
-
-      priceToggle.addEventListener("click", ()=>{
-        if (hasPriceAccess()){ setPriceAccess(false); syncPriceToggle(); render(window.__products || []); }
-        else openModal();
-      });
-      closeModal.addEventListener("click", close);
-      modal.addEventListener("click", (e)=>{ if(e.target === modal) close(); });
-
-      unlockBtn.addEventListener("click", ()=>{
-        if(accessCode.value.trim() === ACCESS_CODE){
-          setPriceAccess(true);
-          syncPriceToggle();
-          close();
-          render(window.__products || []);
-        } else {
-          accessCode.value="";
-          accessCode.placeholder="Invalid code";
-          accessCode.focus();
-        }
-      });
-      lockBtn.addEventListener("click", ()=>{
-        setPriceAccess(false);
-        syncPriceToggle();
-        close();
-        render(window.__products || []);
-      });
-
-      const grid = document.getElementById("grid");
-      const programFilter = document.getElementById("programFilter");
-      const search = document.getElementById("search");
-
-      function money(x){
-        if (x==null || Number.isNaN(x)) return "";
-        return "$" + Number(x).toFixed(2);
-      }
-
-      function card(p){
-        const showPrices = hasPriceAccess();
-        const forms = (p.dosageForm||[]).join(", ");
-        const pkg30 = (p.packages||[]).find(x=>x.days===30);
-        const pkg90 = (p.packages||[]).find(x=>x.days===90);
-
-        const price30 = showPrices ? money(pkg30 && pkg30.msrp) : "Sign in to view";
-        const price90 = showPrices ? money(pkg90 && pkg90.msrp) : "Sign in to view";
-
-        const stage = p.stage ? `<span class="pill">Stage ${p.stage}</span>` : "";
-        const badge = `<span class="pill">${p.program}</span>`;
-        const formBadge = forms ? `<span class="pill">${forms}</span>` : "";
-
-        return `
-          <article class="card">
-            <div class="card-top">
-              <img class="thumb" src="${p.image}" alt="${p.name}"/>
-              <div class="card-meta">
-                <div class="pills">${badge}${stage}${formBadge}</div>
-                <h3>${p.name}</h3>
-                <p class="muted">Rx name: ${p.rxName}</p>
-              </div>
-            </div>
-            <div class="card-actions">
-              <a class="btn secondary" href="start.html">Start intake</a>
-              <div class="cta">
-                <a class="btn primary" href="start.html">30-Day — ${price30}</a>
-                <a class="btn secondary" href="start.html">90-Day — ${price90}</a>
-              </div>
-            </div>
-          </article>
-        `;
-      }
-
-      function render(list){
-        const q = (search.value||"").toLowerCase().trim();
-        const prog = programFilter.value;
-        const filtered = list.filter(p=>{
-          if(prog && prog !== "ALL" && p.program !== prog) return false;
-          if(!q) return true;
-          return (p.name||"").toLowerCase().includes(q) ||
-                 (p.rxName||"").toLowerCase().includes(q) ||
-                 (p.program||"").toLowerCase().includes(q);
-        });
-
-        grid.innerHTML = filtered.map(card).join("");
-      }
-
-      async function init(){
-        syncPriceToggle();
-        const res = await fetch("data/products.json", {cache:"no-store"});
-        const list = await res.json();
-        window.__products = list;
-
-        const programs = Array.from(new Set(list.map(p=>p.program))).sort();
-        programFilter.innerHTML = `<option value="ALL">All</option>` + programs.map(p=>`<option value="${p}">${p}</option>`).join("");
-        programFilter.addEventListener("change", ()=>render(list));
-        search.addEventListener("input", ()=>render(list));
-        render(list);
-      }
-      init();
-    </script>
+</div>
+<div class="right">
+<a class="badge" href="start.html">Start Intake</a>
+</div>
+</div>
+</div>
+<div class="nav">
+<div class="container">
+<div class="brand">
+<div aria-hidden="true" class="mark"><span>SHW</span></div>
+<div class="name">
+<strong>Shepherd Health &amp; Wellness</strong>
+<small>Powered by Shepherd Specialty Pharmacy network</small>
+</div>
+</div>
+<div class="navlinks">
+<a href="index.html">Home</a>
+<a href="programs.html">Programs</a>
+<a href="products.html">Therapies</a>
+<a href="how-it-works.html">How it works</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="navcta">
+<a class="btn secondary" href="providers.html">Providers</a>
+<a class="btn primary" href="start.html">Start intake</a>
+</div>
+</div>
+</div>
+<main>
+<section class="page-hero">
+<div class="container">
+<h1>Programs &amp; Packages</h1>
+<p class="sub">Choose a category, then select a 30‑day or 90‑day package. For staged therapies (GLP‑1s), pick your stage inside the same card.</p>
 </div>
 </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div>
-        <div style="display:flex;gap:12px;align-items:center;">
-          <img src="assets/shw-logo.svg" alt="SHW logo" style="width:44px;height:44px;border-radius:12px"/>
-          <div>
-            <div style="font-weight:800;">Shepherd Health & Wellness</div>
-            <small>Consumer education + provider-directed access to wellness therapies.</small>
-          </div>
-        </div>
-
-        <hr class="sep"/>
-
-        <small>
-          <strong>Important:</strong> This website provides general educational information and is not medical advice.
+<section class="container">
+<div id="catalogMountPrograms"></div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div>
+<div style="display:flex;gap:12px;align-items:center;">
+<img alt="SHW logo" src="assets/shw-logo.svg" style="width:44px;height:44px;border-radius:12px"/>
+<div>
+<div style="font-weight:800;">Shepherd Health &amp; Wellness</div>
+<small>Consumer education + provider-directed access to wellness therapies.</small>
+</div>
+</div>
+<hr class="sep"/>
+<small>
+<strong>Important:</strong> This website provides general educational information and is not medical advice.
           If a prescription is required, therapy is provided only pursuant to a valid prescription from a licensed practitioner
           and fulfilled by a licensed pharmacy/partner in your state as applicable.
         </small>
-      </div>
-
-      <div class="cols">
-        <div>
-          <h5>Links</h5>
-          <ul>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="products.html">Therapies</a></li>
-            <li><a href="how-it-works.html">How it works</a></li>
-            <li><a href="providers.html">Provider page</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h5>Policies</h5>
-          <ul>
-            <li><a href="shipping.html">Shipping</a></li>
-            <li><a href="refund.html">Refund</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="terms.html">Terms</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container" style="margin-top:14px;">
-      <small>© 2025 Shepherd Health & Wellness (SHW). All rights reserved.</small>
-    </div>
-  </footer>
-</body>
+</div>
+<div class="cols">
+<div>
+<h5>Links</h5>
+<ul>
+<li><a href="programs.html">Programs</a></li>
+<li><a href="products.html">Therapies</a></li>
+<li><a href="how-it-works.html">How it works</a></li>
+<li><a href="providers.html">Provider page</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5>Policies</h5>
+<ul>
+<li><a href="shipping.html">Shipping</a></li>
+<li><a href="refund.html">Refund</a></li>
+<li><a href="privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container" style="margin-top:14px;">
+<small>© 2025 Shepherd Health &amp; Wellness (SHW). All rights reserved.</small>
+</div>
+</footer>
+<script src="assets/catalog.js"></script><script>
+(async () => {
+  try {
+    const items = await SHWCatalog.loadCatalog();
+    SHWCatalog.renderCatalog({ items, mountId: "catalogMountPrograms", showProgram: false, enableSearch: true, programSections: true });
+  } catch (e) {
+    console.error(e);
+    const el = document.getElementById("catalogMountPrograms");
+    if (el) el.innerHTML = '<div class="notice">Catalog failed to load. Please refresh.</div>';
+  }
+})();
+</script></body>
 </html>

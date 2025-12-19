@@ -2211,5 +2211,27 @@
       }
     ],
     "image": "assets/products/magnesium-injection.svg"
+  },
+  {
+    "id": "tb4",
+    "name": "Thymosin Beta\u20114 (TB\u20114)",
+    "rxName": "Thymosin Beta\u20114 (TB\u20114)",
+    "program": "Regenerative & Injury Recovery",
+    "dosageForm": [
+      "Injectable"
+    ],
+    "image": "assets/products/tb4.svg",
+    "rxType": "Rx (clinician reviewed)",
+    "stage": null,
+    "packages": [
+      {
+        "days": 30,
+        "msrp": null
+      },
+      {
+        "days": 90,
+        "msrp": null
+      }
+    ]
   }
 ]
