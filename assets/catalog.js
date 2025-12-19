@@ -140,7 +140,25 @@ function renderCatalog({items, mountId, showProgram=false, enableSearch=true, pr
 
   const groups = groupItems(items);
 
-  const programs = [...new Set(groups.map(g => g.program))].sort((a,b)=>a.localeCompare(b));
+  const programs = [...new Set(groups.map(g => g.program))].sort((a,b)=>{
+    const order = [
+      "Weight Loss & Metabolic Optimization",
+      "Regenerative & Injury Recovery",
+      "Longevity & Cellular Health",
+      "Neuro / Mood / Sleep",
+      "Growth Hormone Optimization",
+      "Men’s Health & Performance",
+      "Women’s Hormone Balance",
+      "Dermatology & Aesthetics",
+      "Hair Loss & Scalp Health"
+    ];
+    const ia = order.indexOf(a);
+    const ib = order.indexOf(b);
+    if (ia === -1 && ib === -1) return a.localeCompare(b);
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
   const state = {q:'', program:'All'};
 
   const search = el('input', {class:'catalog-search', placeholder:'Search therapies, compounds, peptides…', type:'search'});
