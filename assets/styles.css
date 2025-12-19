@@ -101,3 +101,35 @@ textarea{min-height:120px;resize:vertical}
   .h1{font-size:36px}
   .navlinks{display:none}
 }
+
+/* --- v4 additions --- */
+.controls{display:grid;grid-template-columns:1fr 260px 240px;gap:14px;margin:18px 0 18px}
+.control label{display:block;font-size:12px;opacity:.75;margin:0 0 6px}
+.control input,.control select{width:100%;padding:12px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#fff}
+.hint{font-size:12px;opacity:.65;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:10px}
+.card{border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);border-radius:18px;padding:14px}
+.card-top{display:flex;gap:14px;align-items:flex-start}
+.thumb{width:92px;height:92px;border-radius:16px;border:1px solid rgba(255,255,255,.10);background:#0b0b0b;flex:0 0 auto}
+.card-meta h3{margin:6px 0 4px;font-size:18px;line-height:1.2}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);font-size:12px;opacity:.9}
+.card-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.65);display:none;align-items:center;justify-content:center;padding:18px;z-index:50}
+.modal.show{display:flex}
+.modal-card{width:min(560px,100%);background:#0b0b0b;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:16px}
+.modal-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.iconbtn{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#fff;border-radius:12px;padding:6px 10px;font-size:18px;cursor:pointer}
+.form{margin-top:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.field{display:grid;gap:6px}
+.field span{font-size:12px;opacity:.75}
+.field input,.field select{padding:12px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#fff}
+.check{display:flex;gap:10px;align-items:flex-start;margin:8px 0}
+.check input{margin-top:2px}
+@media (max-width:900px){
+  .controls{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+}

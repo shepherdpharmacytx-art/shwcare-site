@@ -56,40 +56,97 @@
 <section class="section">
   <div class="container">
     <h2>Start intake</h2>
-    <p class="lead">Choose your path. We’ll route you to the next step. Please avoid entering sensitive medical details on this public page.</p>
+    <p class="lead">Complete a quick intake. A licensed provider will review your information. If clinically appropriate, a prescription may be issued.</p>
 
-    <div class="grid2">
-      <div class="card pad">
-        <h3>Consumer — I want to start a program</h3>
-        <p>Pick your goal and we’ll guide you to practitioner review and the correct fulfillment channel.</p>
-        <div class="form" style="margin-top:12px">
-          <div>
-            <label for="goal">Goal</label>
-            <select id="goal" name="goal">
-              <option>Weight</option>
-              <option>Performance</option>
-              <option>Longevity</option>
-              <option>Recovery</option>
-            </select>
-          </div>
-          <a class="btn primary" href="contact.html">Request next step</a>
-          <div class="notice">We will respond with the appropriate secure intake method for prescriptions, if needed.</div>
-        </div>
+    <form id="intakeForm" class="form">
+      <div class="grid2">
+        <label class="field">
+          <span>Email</span>
+          <input id="email" type="email" required placeholder="you@domain.com"/>
+        </label>
+
+        <label class="field">
+          <span>State</span>
+          <input id="state" maxlength="2" required placeholder="TX"/>
+        </label>
       </div>
 
-      <div class="card pad">
-        <h3>Provider — I want to prescribe / refer</h3>
-        <p>Clinic onboarding and routing support for patients in multiple states.</p>
-        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn secondary" href="providers.html">Provider page</a>
-          <a class="btn primary" href="contact.html">Clinic onboarding</a>
-        </div>
-        <div class="notice" style="margin-top:12px">
-          Preferred Rx: eRx. We can provide routing details and partner pharmacy information per state once aligned.
-        </div>
+      <label class="field">
+        <span>Have you used GLP-1 medications before?</span>
+        <select id="prior_glp1">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+      </label>
+
+      <div id="priorBlock" class="grid2" style="display:none;">
+        <label class="field">
+          <span>Prior product</span>
+          <input id="prior_product" placeholder="e.g., Semaglutide"/>
+        </label>
+        <label class="field">
+          <span>Last dose (free text)</span>
+          <input id="prior_dose" placeholder="e.g., 0.5 mg weekly"/>
+        </label>
       </div>
-    </div>
-  </div>
+
+      <div class="note">
+        <h3>Safety screening (quick)</h3>
+        <label class="check"><input type="checkbox" id="disq_pregnant"/> Pregnant or trying to become pregnant</label>
+        <label class="check"><input type="checkbox" id="disq_breastfeeding"/> Breastfeeding</label>
+        <label class="check"><input type="checkbox" id="disq_men2_thyroid"/> Personal/family history of medullary thyroid cancer or MEN2</label>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" type="submit">Save intake</button>
+        <a class="btn secondary" href="programs.html">Browse programs</a>
+      </div>
+
+      <p id="status" class="muted"></p>
+    </form>
+
+    <script>
+      const API_BASE = "https://api.shwcare.com";
+      const prior = document.getElementById("prior_glp1");
+      const priorBlock = document.getElementById("priorBlock");
+      prior.addEventListener("change", ()=> priorBlock.style.display = prior.value==="yes" ? "grid" : "none");
+
+      document.getElementById("intakeForm").addEventListener("submit", async (e)=>{
+        e.preventDefault();
+        const status = document.getElementById("status");
+        status.textContent = "Saving intake...";
+        const payload = {
+          email: document.getElementById("email").value.trim(),
+          state: document.getElementById("state").value.trim().toUpperCase(),
+          prior_glp1: prior.value,
+          prior_product: document.getElementById("prior_product").value.trim(),
+          prior_dose: document.getElementById("prior_dose").value.trim(),
+          disq_pregnant: document.getElementById("disq_pregnant").checked,
+          disq_breastfeeding: document.getElementById("disq_breastfeeding").checked,
+          disq_men2_thyroid: document.getElementById("disq_men2_thyroid").checked
+        };
+        try {
+          const res = await fetch(API_BASE + "/intake/save", {
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body: JSON.stringify(payload)
+          });
+          const data = await res.json();
+          if(!res.ok) throw new Error(data.error || "Failed");
+          localStorage.setItem("shw_user_id", data.userId || "");
+          localStorage.setItem("shw_intake_id", data.intakeId || "");
+          if(data.eligible === false) {
+            status.textContent = "Intake saved. You may not be eligible based on screening. Please contact support.";
+          } else {
+            status.textContent = "Saved. You can now proceed to checkout after selecting a package.";
+            setTimeout(()=> window.location.href="programs.html?saved=1", 800);
+          }
+        } catch(err) {
+          status.textContent = "Error: " + err.message;
+        }
+      });
+    </script>
+</div>
 </section>
 
   </main>

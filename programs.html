@@ -56,49 +56,174 @@
 <section class="section">
   <div class="container">
     <h2>Programs</h2>
-    <p class="lead">Programs organize therapy pathways by outcomes. Final therapy selection is determined by a licensed practitioner.</p>
+    <p class="lead">Choose a 30-day or 90-day package. <strong>Dose and final therapy are clinician-determined</strong> based on your intake and clinical review.</p>
 
-    <div id="weight" class="card pad" style="margin-bottom:14px">
-      <h3>Weight Program</h3>
-      <p>Structured support for body composition goals. May include provider-directed pharmacotherapy when appropriate.</p>
-      <div class="pills">
-        <span class="pill">Progress tracking</span>
-        <span class="pill">Refill reminders</span>
-        <span class="pill">Cold-chain shipping if needed</span>
+    <div class="controls">
+      <div class="control">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="Search (e.g., semaglutide, BPC-157, NAD+)"/>
+      </div>
+      <div class="control">
+        <label for="programFilter">Category</label>
+        <select id="programFilter"></select>
+      </div>
+      <div class="control">
+        <label for="priceToggle">Pricing</label>
+        <button id="priceToggle" class="btn secondary" type="button">Unlock pricing</button>
+        <div class="hint">Pricing unlock is a lightweight gate for quoting (frontend-only).</div>
       </div>
     </div>
 
-    <div id="performance" class="card pad" style="margin-bottom:14px">
-      <h3>Performance Program</h3>
-      <p>Energy, training recovery, and resilience. May include peptide-based therapies if prescribed.</p>
-      <div class="pills">
-        <span class="pill">Recovery support</span>
-        <span class="pill">Goal-based protocols</span>
-        <span class="pill">Provider review</span>
-      </div>
+    <div id="grid" class="grid"></div>
+
+    <div class="note">
+      <h3>Important</h3>
+      <ul>
+        <li>Payment does not guarantee a prescription. Licensed providers make independent clinical decisions.</li>
+        <li>Some states require a brief video visit; most reviews are asynchronous.</li>
+        <li>Rx-only products ship only after provider approval and pharmacy verification.</li>
+      </ul>
     </div>
 
-    <div id="longevity" class="card pad" style="margin-bottom:14px">
-      <h3>Longevity Program</h3>
-      <p>Long-term health fundamentals: sleep, inflammation management, and metabolic support.</p>
-      <div class="pills">
-        <span class="pill">Sustainable routines</span>
-        <span class="pill">Education-first</span>
-        <span class="pill">Clinic-aligned</span>
-      </div>
-    </div>
-
-    <div class="banner">
-      <div class="row">
-        <div>
-          <strong>Ready to begin?</strong><br/>
-          <span>Start intake and we’ll route you to the correct next step.</span>
+    <div id="loginModal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-head">
+          <h3 id="modalTitle">Unlock pricing</h3>
+          <button id="closeModal" class="iconbtn" aria-label="Close">×</button>
         </div>
-        <div><a class="btn" style="background:#fff;color:var(--navy);border-color:#fff" href="start.html">Start intake</a></div>
+        <p class="muted">This is a lightweight gate for internal quoting. True access control will be enforced in the backend later.</p>
+        <label class="field">
+          <span>Access code</span>
+          <input id="accessCode" type="password" placeholder="Enter code"/>
+        </label>
+        <div class="row">
+          <button id="unlockBtn" class="btn primary" type="button">Unlock</button>
+          <button id="lockBtn" class="btn secondary" type="button">Lock</button>
+        </div>
+        <p class="hint">Change the access code inside <code>programs.html</code>.</p>
       </div>
     </div>
 
-  </div>
+    <script>
+      const API_BASE = "https://api.shwcare.com";
+      const PRICE_ACCESS_KEY = "shw_price_access";
+      const ACCESS_CODE = "shwcare"; // change this
+
+      function hasPriceAccess(){ return localStorage.getItem(PRICE_ACCESS_KEY)==="1"; }
+      function setPriceAccess(on){ localStorage.setItem(PRICE_ACCESS_KEY, on ? "1" : "0"); }
+
+      const modal = document.getElementById("loginModal");
+      const priceToggle = document.getElementById("priceToggle");
+      const closeModal = document.getElementById("closeModal");
+      const unlockBtn = document.getElementById("unlockBtn");
+      const lockBtn = document.getElementById("lockBtn");
+      const accessCode = document.getElementById("accessCode");
+
+      function openModal(){ modal.classList.add("show"); modal.setAttribute("aria-hidden","false"); accessCode.focus(); }
+      function close(){ modal.classList.remove("show"); modal.setAttribute("aria-hidden","true"); accessCode.value=""; }
+
+      function syncPriceToggle(){
+        priceToggle.textContent = hasPriceAccess() ? "Pricing unlocked (click to lock)" : "Unlock pricing";
+      }
+
+      priceToggle.addEventListener("click", ()=>{
+        if (hasPriceAccess()){ setPriceAccess(false); syncPriceToggle(); render(window.__products || []); }
+        else openModal();
+      });
+      closeModal.addEventListener("click", close);
+      modal.addEventListener("click", (e)=>{ if(e.target === modal) close(); });
+
+      unlockBtn.addEventListener("click", ()=>{
+        if(accessCode.value.trim() === ACCESS_CODE){
+          setPriceAccess(true);
+          syncPriceToggle();
+          close();
+          render(window.__products || []);
+        } else {
+          accessCode.value="";
+          accessCode.placeholder="Invalid code";
+          accessCode.focus();
+        }
+      });
+      lockBtn.addEventListener("click", ()=>{
+        setPriceAccess(false);
+        syncPriceToggle();
+        close();
+        render(window.__products || []);
+      });
+
+      const grid = document.getElementById("grid");
+      const programFilter = document.getElementById("programFilter");
+      const search = document.getElementById("search");
+
+      function money(x){
+        if (x==null || Number.isNaN(x)) return "";
+        return "$" + Number(x).toFixed(2);
+      }
+
+      function card(p){
+        const showPrices = hasPriceAccess();
+        const forms = (p.dosageForm||[]).join(", ");
+        const pkg30 = (p.packages||[]).find(x=>x.days===30);
+        const pkg90 = (p.packages||[]).find(x=>x.days===90);
+
+        const price30 = showPrices ? money(pkg30 && pkg30.msrp) : "Sign in to view";
+        const price90 = showPrices ? money(pkg90 && pkg90.msrp) : "Sign in to view";
+
+        const stage = p.stage ? `<span class="pill">Stage ${p.stage}</span>` : "";
+        const badge = `<span class="pill">${p.program}</span>`;
+        const formBadge = forms ? `<span class="pill">${forms}</span>` : "";
+
+        return `
+          <article class="card">
+            <div class="card-top">
+              <img class="thumb" src="${p.image}" alt="${p.name}"/>
+              <div class="card-meta">
+                <div class="pills">${badge}${stage}${formBadge}</div>
+                <h3>${p.name}</h3>
+                <p class="muted">Rx name: ${p.rxName}</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn secondary" href="start.html">Start intake</a>
+              <div class="cta">
+                <a class="btn primary" href="start.html">30-Day — ${price30}</a>
+                <a class="btn secondary" href="start.html">90-Day — ${price90}</a>
+              </div>
+            </div>
+          </article>
+        `;
+      }
+
+      function render(list){
+        const q = (search.value||"").toLowerCase().trim();
+        const prog = programFilter.value;
+        const filtered = list.filter(p=>{
+          if(prog && prog !== "ALL" && p.program !== prog) return false;
+          if(!q) return true;
+          return (p.name||"").toLowerCase().includes(q) ||
+                 (p.rxName||"").toLowerCase().includes(q) ||
+                 (p.program||"").toLowerCase().includes(q);
+        });
+
+        grid.innerHTML = filtered.map(card).join("");
+      }
+
+      async function init(){
+        syncPriceToggle();
+        const res = await fetch("data/products.json", {cache:"no-store"});
+        const list = await res.json();
+        window.__products = list;
+
+        const programs = Array.from(new Set(list.map(p=>p.program))).sort();
+        programFilter.innerHTML = `<option value="ALL">All</option>` + programs.map(p=>`<option value="${p}">${p}</option>`).join("");
+        programFilter.addEventListener("change", ()=>render(list));
+        search.addEventListener("input", ()=>render(list));
+        render(list);
+      }
+      init();
+    </script>
+</div>
 </section>
 
   </main>

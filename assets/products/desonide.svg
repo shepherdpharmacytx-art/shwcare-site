@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#0b0b0b"/>
+  <rect x="80" y="80" width="1040" height="1040" rx="80" fill="#111" stroke="#2a2a2a" stroke-width="6"/>
+  <g fill="#fff" opacity="0.96" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" text-anchor="middle">
+    <text x="600" y="520" font-size="56" font-weight="700">Desonide</text>
+    <text x="600" y="590" font-size="30" opacity="0.75">Shepherd Health &amp; Wellness</text>
+    <text x="600" y="650" font-size="26" opacity="0.6">Rx-only if clinically appropriate</text>
+  </g>
+  <g fill="none" stroke="#fff" opacity="0.18" stroke-width="10">
+    <path d="M350 780c0-138 112-250 250-250s250 112 250 250-112 250-250 250-250-112-250-250z"/>
+    <path d="M470 780h260"/>
+    <path d="M600 650v260"/>
+  </g>
+</svg>

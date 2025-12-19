@@ -1,0 +1,2215 @@
+[
+  {
+    "id": "semaglutide-b12-stage-1",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Semaglutide + B12 \u2014 (stage 1)",
+    "rxName": "Semaglutide + B12 (stage 1)",
+    "stage": 1,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 131.3
+      },
+      {
+        "days": 90,
+        "msrp": 224.9
+      }
+    ],
+    "image": "assets/products/semaglutide-b12.svg"
+  },
+  {
+    "id": "semaglutide-b12-stage-2",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Semaglutide + B12 \u2014 (stage 2)",
+    "rxName": "Semaglutide + B12 (stage 2)",
+    "stage": 2,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 141.7
+      },
+      {
+        "days": 90,
+        "msrp": 256.1
+      }
+    ],
+    "image": "assets/products/semaglutide-b12.svg"
+  },
+  {
+    "id": "semaglutide-b12-stage-3",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Semaglutide + B12 \u2014 (stage 3)",
+    "rxName": "Semaglutide + B12 (stage 3)",
+    "stage": 3,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 144.3
+      },
+      {
+        "days": 90,
+        "msrp": 263.9
+      }
+    ],
+    "image": "assets/products/semaglutide-b12.svg"
+  },
+  {
+    "id": "semaglutide-b12-stage-4",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Semaglutide + B12 \u2014 (stage 4)",
+    "rxName": "Semaglutide + B12 (stage 4)",
+    "stage": 4,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 144.3
+      },
+      {
+        "days": 90,
+        "msrp": 263.9
+      }
+    ],
+    "image": "assets/products/semaglutide-b12.svg"
+  },
+  {
+    "id": "semaglutide-b12-stage-5",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Semaglutide + B12 \u2014 (stage 5)",
+    "rxName": "Semaglutide + B12 (stage 5)",
+    "stage": 5,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 157.3
+      },
+      {
+        "days": 90,
+        "msrp": 302.9
+      }
+    ],
+    "image": "assets/products/semaglutide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-1",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 1)",
+    "rxName": "Tirzepatide + B12 (stage 1)",
+    "stage": 1,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 179.4
+      },
+      {
+        "days": 90,
+        "msrp": 369.2
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-2",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 2)",
+    "rxName": "Tirzepatide + B12 (stage 2)",
+    "stage": 2,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 195.0
+      },
+      {
+        "days": 90,
+        "msrp": 416.0
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-3",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 3)",
+    "rxName": "Tirzepatide + B12 (stage 3)",
+    "stage": 3,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 211.9
+      },
+      {
+        "days": 90,
+        "msrp": 466.7
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-4",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 4)",
+    "rxName": "Tirzepatide + B12 (stage 4)",
+    "stage": 4,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 227.5
+      },
+      {
+        "days": 90,
+        "msrp": 513.5
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-5",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 5)",
+    "rxName": "Tirzepatide + B12 (stage 5)",
+    "stage": 5,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 235.3
+      },
+      {
+        "days": 90,
+        "msrp": 536.9
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "tirzepatide-b12-stage-6",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Tirzepatide + B12 \u2014 (stage 6)",
+    "rxName": "Tirzepatide + B12 (stage 6)",
+    "stage": 6,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 248.3
+      },
+      {
+        "days": 90,
+        "msrp": 575.9
+      }
+    ],
+    "image": "assets/products/tirzepatide-b12.svg"
+  },
+  {
+    "id": "retatrutide-b12-stage-1",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Retatrutide + B12 \u2014 (stage 1)",
+    "rxName": "Retatrutide + B12 (stage 1)",
+    "stage": 1,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 188.5
+      },
+      {
+        "days": 90,
+        "msrp": 396.5
+      }
+    ],
+    "image": "assets/products/retatrutide-b12.svg"
+  },
+  {
+    "id": "retatrutide-b12-stage-2",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Retatrutide + B12 \u2014 (stage 2)",
+    "rxName": "Retatrutide + B12 (stage 2)",
+    "stage": 2,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 257.4
+      },
+      {
+        "days": 90,
+        "msrp": 603.2
+      }
+    ],
+    "image": "assets/products/retatrutide-b12.svg"
+  },
+  {
+    "id": "retatrutide-b12-stage-3",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Retatrutide + B12 \u2014 (stage 3)",
+    "rxName": "Retatrutide + B12 (stage 3)",
+    "stage": 3,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 296.4
+      },
+      {
+        "days": 90,
+        "msrp": 720.2
+      }
+    ],
+    "image": "assets/products/retatrutide-b12.svg"
+  },
+  {
+    "id": "retatrutide-b12-stage-4",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Retatrutide + B12 \u2014 (stage 4)",
+    "rxName": "Retatrutide + B12 (stage 4)",
+    "stage": 4,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 354.9
+      },
+      {
+        "days": 90,
+        "msrp": 895.7
+      }
+    ],
+    "image": "assets/products/retatrutide-b12.svg"
+  },
+  {
+    "id": "retatrutide-b12-stage-5",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Retatrutide + B12 \u2014 (stage 5)",
+    "rxName": "Retatrutide + B12 (stage 5)",
+    "stage": 5,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 413.4
+      },
+      {
+        "days": 90,
+        "msrp": 1071.2
+      }
+    ],
+    "image": "assets/products/retatrutide-b12.svg"
+  },
+  {
+    "id": "lipotropic-injection",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "Lipotropic Injection \u2014 (MIC + B12)",
+    "rxName": "Lipotropic Injection (MIC + B12)",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 117.0
+      },
+      {
+        "days": 90,
+        "msrp": 182.0
+      }
+    ],
+    "image": "assets/products/lipotropic-injection.svg"
+  },
+  {
+    "id": "l-carnitine",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "L-Carnitine",
+    "rxName": "L-Carnitine",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 117.0
+      },
+      {
+        "days": 90,
+        "msrp": 182.0
+      }
+    ],
+    "image": "assets/products/l-carnitine.svg"
+  },
+  {
+    "id": "aod-9604",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "AOD-9604",
+    "rxName": "AOD-9604",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 152.1
+      },
+      {
+        "days": 90,
+        "msrp": 287.3
+      }
+    ],
+    "image": "assets/products/aod-9604.svg"
+  },
+  {
+    "id": "mots-c",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "MOTS-C",
+    "rxName": "MOTS-C",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 156.0
+      },
+      {
+        "days": 90,
+        "msrp": 299.0
+      }
+    ],
+    "image": "assets/products/mots-c.svg"
+  },
+  {
+    "id": "5-amino-1mq",
+    "program": "Weight Loss & Metabolic Optimization",
+    "name": "5-Amino-1MQ",
+    "rxName": "5-Amino-1MQ",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 149.5
+      },
+      {
+        "days": 90,
+        "msrp": 279.5
+      }
+    ],
+    "image": "assets/products/5-amino-1mq.svg"
+  },
+  {
+    "id": "bpc-157",
+    "program": "Regenerative & Injury Recovery",
+    "name": "BPC-157",
+    "rxName": "BPC-157",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 157.3
+      },
+      {
+        "days": 90,
+        "msrp": 302.9
+      }
+    ],
+    "image": "assets/products/bpc-157.svg"
+  },
+  {
+    "id": "tb-500",
+    "program": "Regenerative & Injury Recovery",
+    "name": "TB-500",
+    "rxName": "TB-500",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 143.0
+      },
+      {
+        "days": 90,
+        "msrp": 260.0
+      }
+    ],
+    "image": "assets/products/tb-500.svg"
+  },
+  {
+    "id": "kpv",
+    "program": "Regenerative & Injury Recovery",
+    "name": "KPV",
+    "rxName": "KPV",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 143.0
+      },
+      {
+        "days": 90,
+        "msrp": 260.0
+      }
+    ],
+    "image": "assets/products/kpv.svg"
+  },
+  {
+    "id": "sermorelin",
+    "program": "Growth Hormone Optimization",
+    "name": "Sermorelin",
+    "rxName": "Sermorelin",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 149.5
+      },
+      {
+        "days": 90,
+        "msrp": 279.5
+      }
+    ],
+    "image": "assets/products/sermorelin.svg"
+  },
+  {
+    "id": "tesamorelin",
+    "program": "Growth Hormone Optimization",
+    "name": "Tesamorelin",
+    "rxName": "Tesamorelin",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 156.0
+      },
+      {
+        "days": 90,
+        "msrp": 299.0
+      }
+    ],
+    "image": "assets/products/tesamorelin.svg"
+  },
+  {
+    "id": "ipamorelin",
+    "program": "Growth Hormone Optimization",
+    "name": "Ipamorelin",
+    "rxName": "Ipamorelin",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/ipamorelin.svg"
+  },
+  {
+    "id": "cjc-1295",
+    "program": "Growth Hormone Optimization",
+    "name": "CJC-1295 \u2014 ( no DAC)",
+    "rxName": "CJC-1295 ( no DAC)",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 139.1
+      },
+      {
+        "days": 90,
+        "msrp": 248.3
+      }
+    ],
+    "image": "assets/products/cjc-1295.svg"
+  },
+  {
+    "id": "cjc-1295",
+    "program": "Growth Hormone Optimization",
+    "name": "CJC-1295 \u2014 (w/DAC)",
+    "rxName": "CJC-1295 (w/DAC)",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 149.5
+      },
+      {
+        "days": 90,
+        "msrp": 279.5
+      }
+    ],
+    "image": "assets/products/cjc-1295.svg"
+  },
+  {
+    "id": "nad",
+    "program": "Longevity & Cellular Health",
+    "name": "NAD+",
+    "rxName": "NAD+",
+    "stage": null,
+    "dosageForm": [
+      "Injectable",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 240.5
+      },
+      {
+        "days": 90,
+        "msrp": 552.5
+      }
+    ],
+    "image": "assets/products/nad.svg"
+  },
+  {
+    "id": "glutathione",
+    "program": "Longevity & Cellular Health",
+    "name": "Glutathione",
+    "rxName": "Glutathione",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/glutathione.svg"
+  },
+  {
+    "id": "epithalon",
+    "program": "Longevity & Cellular Health",
+    "name": "Epithalon",
+    "rxName": "Epithalon",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 143.0
+      },
+      {
+        "days": 90,
+        "msrp": 260.0
+      }
+    ],
+    "image": "assets/products/epithalon.svg"
+  },
+  {
+    "id": "thymosin-alpha-1",
+    "program": "Longevity & Cellular Health",
+    "name": "Thymosin Alpha-1",
+    "rxName": "Thymosin Alpha-1",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 162.5
+      },
+      {
+        "days": 90,
+        "msrp": 318.5
+      }
+    ],
+    "image": "assets/products/thymosin-alpha-1.svg"
+  },
+  {
+    "id": "dsip",
+    "program": "Neuro, Mood & Sleep Optimization",
+    "name": "DSIP",
+    "rxName": "DSIP",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 133.9
+      },
+      {
+        "days": 90,
+        "msrp": 232.7
+      }
+    ],
+    "image": "assets/products/dsip.svg"
+  },
+  {
+    "id": "selank",
+    "program": "Neuro, Mood & Sleep Optimization",
+    "name": "Selank",
+    "rxName": "Selank",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Nasal"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 131.3
+      },
+      {
+        "days": 90,
+        "msrp": 224.9
+      }
+    ],
+    "image": "assets/products/selank.svg"
+  },
+  {
+    "id": "semax",
+    "program": "Neuro, Mood & Sleep Optimization",
+    "name": "Semax",
+    "rxName": "Semax",
+    "stage": null,
+    "dosageForm": [
+      "Injectable; Nasal"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 133.9
+      },
+      {
+        "days": 90,
+        "msrp": 232.7
+      }
+    ],
+    "image": "assets/products/semax.svg"
+  },
+  {
+    "id": "oxytocin",
+    "program": "Neuro, Mood & Sleep Optimization",
+    "name": "Oxytocin \u2014 (Nasal)",
+    "rxName": "Oxytocin (Nasal)",
+    "stage": null,
+    "dosageForm": [
+      "Nasal"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 140.4
+      },
+      {
+        "days": 90,
+        "msrp": 252.2
+      }
+    ],
+    "image": "assets/products/oxytocin.svg"
+  },
+  {
+    "id": "testosterone",
+    "program": "Men\u2019s Health & Performance",
+    "name": "Testosterone \u2014 (Cypionate / Enanthate)",
+    "rxName": "Testosterone (Cypionate / Enanthate)",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/testosterone.svg"
+  },
+  {
+    "id": "hcg",
+    "program": "Men\u2019s Health & Performance",
+    "name": "HCG",
+    "rxName": "HCG",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 185.9
+      },
+      {
+        "days": 90,
+        "msrp": 388.7
+      }
+    ],
+    "image": "assets/products/hcg.svg"
+  },
+  {
+    "id": "anastrozole",
+    "program": "Men\u2019s Health & Performance",
+    "name": "Anastrozole",
+    "rxName": "Anastrozole",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/anastrozole.svg"
+  },
+  {
+    "id": "tadalafil",
+    "program": "Men\u2019s Health & Performance",
+    "name": "Tadalafil",
+    "rxName": "Tadalafil",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/tadalafil.svg"
+  },
+  {
+    "id": "sildenafil",
+    "program": "Men\u2019s Health & Performance",
+    "name": "Sildenafil",
+    "rxName": "Sildenafil",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/sildenafil.svg"
+  },
+  {
+    "id": "pt-141",
+    "program": "Men\u2019s Health & Performance",
+    "name": "PT-141 \u2014 (Bremelanotide)",
+    "rxName": "PT-141 (Bremelanotide)",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 130.0
+      },
+      {
+        "days": 90,
+        "msrp": 221.0
+      }
+    ],
+    "image": "assets/products/pt-141.svg"
+  },
+  {
+    "id": "progesterone",
+    "program": "Women\u2019s Hormone Balance",
+    "name": "Progesterone",
+    "rxName": "Progesterone",
+    "stage": null,
+    "dosageForm": [
+      "Oral; Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/progesterone.svg"
+  },
+  {
+    "id": "estradiol",
+    "program": "Women\u2019s Hormone Balance",
+    "name": "Estradiol",
+    "rxName": "Estradiol",
+    "stage": null,
+    "dosageForm": [
+      "Oral; Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/estradiol.svg"
+  },
+  {
+    "id": "estriol",
+    "program": "Women\u2019s Hormone Balance",
+    "name": "Estriol",
+    "rxName": "Estriol",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/estriol.svg"
+  },
+  {
+    "id": "testosterone",
+    "program": "Women\u2019s Hormone Balance",
+    "name": "Testosterone \u2014 (Low-Dose Topical)",
+    "rxName": "Testosterone (Low-Dose Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 123.5
+      },
+      {
+        "days": 90,
+        "msrp": 201.5
+      }
+    ],
+    "image": "assets/products/testosterone.svg"
+  },
+  {
+    "id": "kisspeptin-10",
+    "program": "Women\u2019s Hormone Balance",
+    "name": "Kisspeptin-10",
+    "rxName": "Kisspeptin-10",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 169.0
+      },
+      {
+        "days": 90,
+        "msrp": 338.0
+      }
+    ],
+    "image": "assets/products/kisspeptin-10.svg"
+  },
+  {
+    "id": "tretinoin",
+    "program": "Acne & Hormonal Skin",
+    "name": "Tretinoin",
+    "rxName": "Tretinoin",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/tretinoin.svg"
+  },
+  {
+    "id": "spironolactone",
+    "program": "Acne & Hormonal Skin",
+    "name": "Spironolactone \u2014 (Topical)",
+    "rxName": "Spironolactone (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/spironolactone.svg"
+  },
+  {
+    "id": "dapsone",
+    "program": "Acne & Hormonal Skin",
+    "name": "Dapsone \u2014 (Topical)",
+    "rxName": "Dapsone (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/dapsone.svg"
+  },
+  {
+    "id": "clindamycin",
+    "program": "Acne & Hormonal Skin",
+    "name": "Clindamycin \u2014 (Topical)",
+    "rxName": "Clindamycin (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/clindamycin.svg"
+  },
+  {
+    "id": "azelaic-acid",
+    "program": "Acne & Hormonal Skin",
+    "name": "Azelaic Acid",
+    "rxName": "Azelaic Acid",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/azelaic-acid.svg"
+  },
+  {
+    "id": "hydroquinone",
+    "program": "Pigmentation & Melasma",
+    "name": "Hydroquinone",
+    "rxName": "Hydroquinone",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/hydroquinone.svg"
+  },
+  {
+    "id": "kojic-acid",
+    "program": "Pigmentation & Melasma",
+    "name": "Kojic Acid",
+    "rxName": "Kojic Acid",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/kojic-acid.svg"
+  },
+  {
+    "id": "tretinoin",
+    "program": "Pigmentation & Melasma",
+    "name": "Tretinoin \u2014 (Pigmentation Regimens)",
+    "rxName": "Tretinoin (Pigmentation Regimens)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/tretinoin.svg"
+  },
+  {
+    "id": "azelaic-acid",
+    "program": "Pigmentation & Melasma",
+    "name": "Azelaic Acid \u2014 (High Strength)",
+    "rxName": "Azelaic Acid (High Strength)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/azelaic-acid.svg"
+  },
+  {
+    "id": "tretinoin",
+    "program": "Anti-Aging & Skin Rejuvenation",
+    "name": "Tretinoin \u2014 (Anti-Aging)",
+    "rxName": "Tretinoin (Anti-Aging)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/tretinoin.svg"
+  },
+  {
+    "id": "niacinamide",
+    "program": "Anti-Aging & Skin Rejuvenation",
+    "name": "Niacinamide",
+    "rxName": "Niacinamide",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/niacinamide.svg"
+  },
+  {
+    "id": "ghk-cu",
+    "program": "Anti-Aging & Skin Rejuvenation",
+    "name": "GHK-Cu \u2014 (Copper Peptide)",
+    "rxName": "GHK-Cu (Copper Peptide)",
+    "stage": null,
+    "dosageForm": [
+      "Topical",
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 140.4
+      },
+      {
+        "days": 90,
+        "msrp": 252.2
+      }
+    ],
+    "image": "assets/products/ghk-cu.svg"
+  },
+  {
+    "id": "resveratrol",
+    "program": "Anti-Aging & Skin Rejuvenation",
+    "name": "Resveratrol",
+    "rxName": "Resveratrol",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/resveratrol.svg"
+  },
+  {
+    "id": "hyaluronic-acid",
+    "program": "Anti-Aging & Skin Rejuvenation",
+    "name": "Hyaluronic Acid",
+    "rxName": "Hyaluronic Acid",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/hyaluronic-acid.svg"
+  },
+  {
+    "id": "minoxidil",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Minoxidil \u2014 (Topical)",
+    "rxName": "Minoxidil (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/minoxidil.svg"
+  },
+  {
+    "id": "finasteride",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Finasteride",
+    "rxName": "Finasteride",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/finasteride.svg"
+  },
+  {
+    "id": "dutasteride",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Dutasteride",
+    "rxName": "Dutasteride",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/dutasteride.svg"
+  },
+  {
+    "id": "oral-minoxidil",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Oral Minoxidil",
+    "rxName": "Oral Minoxidil",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/oral-minoxidil.svg"
+  },
+  {
+    "id": "bimatoprost",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Bimatoprost",
+    "rxName": "Bimatoprost",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/bimatoprost.svg"
+  },
+  {
+    "id": "progesterone",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Progesterone \u2014 (Topical Hair)",
+    "rxName": "Progesterone (Topical Hair)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/progesterone.svg"
+  },
+  {
+    "id": "spironolactone",
+    "program": "Hair Loss & Scalp Health",
+    "name": "Spironolactone \u2014 (Topical Hair)",
+    "rxName": "Spironolactone (Topical Hair)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/spironolactone.svg"
+  },
+  {
+    "id": "tacrolimus",
+    "program": "Eczema & Inflammatory Skin",
+    "name": "Tacrolimus",
+    "rxName": "Tacrolimus",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/tacrolimus.svg"
+  },
+  {
+    "id": "desonide",
+    "program": "Eczema & Inflammatory Skin",
+    "name": "Desonide",
+    "rxName": "Desonide",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/desonide.svg"
+  },
+  {
+    "id": "hydrocortisone",
+    "program": "Eczema & Inflammatory Skin",
+    "name": "Hydrocortisone",
+    "rxName": "Hydrocortisone",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/hydrocortisone.svg"
+  },
+  {
+    "id": "clobetasol",
+    "program": "Eczema & Inflammatory Skin",
+    "name": "Clobetasol",
+    "rxName": "Clobetasol",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/clobetasol.svg"
+  },
+  {
+    "id": "urea",
+    "program": "Eczema & Inflammatory Skin",
+    "name": "Urea",
+    "rxName": "Urea",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/urea.svg"
+  },
+  {
+    "id": "coal-tar",
+    "program": "Psoriasis & Keratin Disorders",
+    "name": "Coal Tar",
+    "rxName": "Coal Tar",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/coal-tar.svg"
+  },
+  {
+    "id": "calcipotriene",
+    "program": "Psoriasis & Keratin Disorders",
+    "name": "Calcipotriene",
+    "rxName": "Calcipotriene",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/calcipotriene.svg"
+  },
+  {
+    "id": "fluorouracil",
+    "program": "Psoriasis & Keratin Disorders",
+    "name": "Fluorouracil \u2014 (5-FU)",
+    "rxName": "Fluorouracil (5-FU)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/fluorouracil.svg"
+  },
+  {
+    "id": "terbinafine",
+    "program": "Infectious Dermatology",
+    "name": "Terbinafine",
+    "rxName": "Terbinafine",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/terbinafine.svg"
+  },
+  {
+    "id": "ciclopirox",
+    "program": "Infectious Dermatology",
+    "name": "Ciclopirox",
+    "rxName": "Ciclopirox",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/ciclopirox.svg"
+  },
+  {
+    "id": "ketoconazole",
+    "program": "Infectious Dermatology",
+    "name": "Ketoconazole",
+    "rxName": "Ketoconazole",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/ketoconazole.svg"
+  },
+  {
+    "id": "mupirocin",
+    "program": "Infectious Dermatology",
+    "name": "Mupirocin",
+    "rxName": "Mupirocin",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/mupirocin.svg"
+  },
+  {
+    "id": "ciprofloxacin",
+    "program": "Infectious Dermatology",
+    "name": "Ciprofloxacin",
+    "rxName": "Ciprofloxacin",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/ciprofloxacin.svg"
+  },
+  {
+    "id": "acyclovir",
+    "program": "Infectious Dermatology",
+    "name": "Acyclovir",
+    "rxName": "Acyclovir",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/acyclovir.svg"
+  },
+  {
+    "id": "valacyclovir",
+    "program": "Infectious Dermatology",
+    "name": "Valacyclovir",
+    "rxName": "Valacyclovir",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/valacyclovir.svg"
+  },
+  {
+    "id": "cidofovir",
+    "program": "Infectious Dermatology",
+    "name": "Cidofovir",
+    "rxName": "Cidofovir",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/cidofovir.svg"
+  },
+  {
+    "id": "salicylic-acid",
+    "program": "Warts & Molluscum",
+    "name": "Salicylic Acid",
+    "rxName": "Salicylic Acid",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/salicylic-acid.svg"
+  },
+  {
+    "id": "fluorouracil",
+    "program": "Warts & Molluscum",
+    "name": "Fluorouracil \u2014 (5-FU)",
+    "rxName": "Fluorouracil (5-FU)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/fluorouracil.svg"
+  },
+  {
+    "id": "imiquimod",
+    "program": "Warts & Molluscum",
+    "name": "Imiquimod",
+    "rxName": "Imiquimod",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/imiquimod.svg"
+  },
+  {
+    "id": "magic-mouthwash",
+    "program": "Oral & Lip Health",
+    "name": "Magic Mouthwash",
+    "rxName": "Magic Mouthwash",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/magic-mouthwash.svg"
+  },
+  {
+    "id": "lidocaine",
+    "program": "Oral & Lip Health",
+    "name": "Lidocaine \u2014 (Oral)",
+    "rxName": "Lidocaine (Oral)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/lidocaine.svg"
+  },
+  {
+    "id": "terbinafine",
+    "program": "Nail Disorders",
+    "name": "Terbinafine \u2014 (Nail)",
+    "rxName": "Terbinafine (Nail)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/terbinafine.svg"
+  },
+  {
+    "id": "ciclopirox",
+    "program": "Nail Disorders",
+    "name": "Ciclopirox \u2014 (Nail)",
+    "rxName": "Ciclopirox (Nail)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/ciclopirox.svg"
+  },
+  {
+    "id": "tavaborole",
+    "program": "Nail Disorders",
+    "name": "Tavaborole",
+    "rxName": "Tavaborole",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/tavaborole.svg"
+  },
+  {
+    "id": "gabapentin",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Gabapentin \u2014 (Topical)",
+    "rxName": "Gabapentin (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/gabapentin.svg"
+  },
+  {
+    "id": "lidocaine",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Lidocaine \u2014 (Topical)",
+    "rxName": "Lidocaine (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/lidocaine.svg"
+  },
+  {
+    "id": "amitriptyline",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Amitriptyline \u2014 (Topical)",
+    "rxName": "Amitriptyline (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/amitriptyline.svg"
+  },
+  {
+    "id": "diclofenac",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Diclofenac \u2014 (Topical)",
+    "rxName": "Diclofenac (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/diclofenac.svg"
+  },
+  {
+    "id": "ketoprofen",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Ketoprofen \u2014 (Topical)",
+    "rxName": "Ketoprofen (Topical)",
+    "stage": null,
+    "dosageForm": [
+      "Topical"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/ketoprofen.svg"
+  },
+  {
+    "id": "low-dose-naltrexone",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Low-Dose Naltrexone \u2014 (LDN)",
+    "rxName": "Low-Dose Naltrexone (LDN)",
+    "stage": null,
+    "dosageForm": [
+      "Oral"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/low-dose-naltrexone.svg"
+  },
+  {
+    "id": "magnesium-injection",
+    "program": "Pain, Pruritus & Neuropathic Skin",
+    "name": "Magnesium Injection",
+    "rxName": "Magnesium Injection",
+    "stage": null,
+    "dosageForm": [
+      "Injectable"
+    ],
+    "rxType": "CMP",
+    "packages": [
+      {
+        "days": 30,
+        "msrp": 110.5
+      },
+      {
+        "days": 90,
+        "msrp": 162.5
+      }
+    ],
+    "image": "assets/products/magnesium-injection.svg"
+  }
+]

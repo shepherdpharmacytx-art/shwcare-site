@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Success | SHWCARE</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="assets/shw-logo.svg" type="image/svg+xml"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="left">
+        <a class="brand" href="index.html">
+          <img src="assets/shw-logo.svg" alt="SHW logo"/>
+          <span>SHWCARE</span>
+        </a>
+      </div>
+      <div class="navcta">
+        <a class="btn secondary" href="programs.html">Programs</a>
+        <a class="btn primary" href="contact.html">Support</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Payment received</h2>
+        <p class="lead">Next step: complete your intake (if you haven’t already). A licensed provider will review your information.</p>
+
+        <div class="note">
+          <p><strong>Important:</strong> Payment does not guarantee a prescription. Providers make independent clinical decisions.</p>
+          <p id="orderLine" class="muted"></p>
+        </div>
+
+        <div class="row">
+          <a class="btn primary" href="start.html">Complete intake</a>
+          <a class="btn secondary" href="how-it-works.html">How it works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const order = params.get("order");
+    if(order) document.getElementById("orderLine").textContent = "Order reference: " + order;
+  </script>
+</body>
+</html>
