@@ -103,7 +103,8 @@
 <small>© 2025 Shepherd Health &amp; Wellness (SHW). All rights reserved.</small>
 </div>
 </footer>
-<script src="assets/catalog.js"></script><script>
+<script>window.CATALOG_OPTIONS = { layout: "icons" };</script>
+  <script src="assets/catalog.js"></script><script>
 (async () => {
   try {
     const items = await SHWCatalog.loadCatalog();

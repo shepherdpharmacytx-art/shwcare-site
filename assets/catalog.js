@@ -6,6 +6,59 @@ async function loadCatalog() {
   return await res.json();
 }
 
+
+// Program slugs used for deep links (e.g., from homepage)
+const PROGRAM_SLUG_MAP = {
+  "weight-loss": "Weight Loss & Metabolic Optimization",
+  "hair": "Hair Loss & Scalp Health",
+  "derm": "Dermatology & Aesthetics",
+  "womens": "Women’s Hormone Balance",
+  "mens": "Men’s Health & Performance",
+  "longevity": "Longevity & Cellular Health",
+  "recovery": "Regenerative & Injury Recovery",
+  "neuro": "Neuro, Mood & Sleep Optimization",
+  "gh": "Growth Hormone Optimization",
+  "peptides": "__PEPTIDES__",
+  "wellness": "__WELLNESS__"
+};
+
+function getProgramFilterFromUrl() {
+  const p = new URLSearchParams(location.search).get("program");
+  if (!p) return null;
+  const key = decodeURIComponent(p).trim().toLowerCase();
+  // allow passing either slug or full label
+  if (PROGRAM_SLUG_MAP[key]) return PROGRAM_SLUG_MAP[key];
+  // try match by label
+  return decodeURIComponent(p).trim();
+}
+
+function filterItemsByProgramParam(items) {
+  const pf = getProgramFilterFromUrl();
+  if (!pf) return {items, label:null};
+  if (pf === "__PEPTIDES__") {
+    const peptidePrograms = new Set([
+      "Regenerative & Injury Recovery",
+      "Longevity & Cellular Health",
+      "Neuro, Mood & Sleep Optimization",
+      "Growth Hormone Optimization"
+    ]);
+    const filtered = (items||[]).filter(it => _isPeptideLike(it) || peptidePrograms.has(it.program));
+    return {items: filtered, label: "Peptide Programs"};
+  }
+  if (pf === "__WELLNESS__") {
+    const wellnessPrograms = new Set([
+      "Men’s Health & Performance",
+      "Women’s Hormone Balance",
+      "Longevity & Cellular Health"
+    ]);
+    const filtered = (items||[]).filter(it => wellnessPrograms.has(it.program) || ["NAD+","Glutathione"].includes((it.rxName||it.name||"").replace(/\s*—.*$/,'').trim()));
+    return {items: filtered, label: "Wellness & Vitality"};
+  }
+  const filtered = (items||[]).filter(it => (it.program||"").trim() === pf);
+  return {items: filtered, label: pf};
+}
+
+
 // Group staged meds (GLP-1s etc.) so you get ONE widget per compound with stage buttons.
 function groupItems(items) {
   const groups = new Map();
@@ -134,11 +187,71 @@ function renderCard(group, opts={showProgram:false}) {
   ]);
 }
 
-function renderCatalog({items, mountId, showProgram=false, enableSearch=true, programSections=true}) {
+
+// --- Therapies icon-grid renderer ---
+function _isGLP1(item){
+  const n = (item.name||'').toLowerCase();
+  return n.includes('semaglutide') || n.includes('tirzepatide') || n.includes('retatrutide');
+}
+function _isPeptideLike(item){
+  const cat=(item.category||'').toLowerCase();
+  const n=(item.name||'').toLowerCase();
+  return cat.includes('peptide') || cat.includes('performance') || cat.includes('longevity') ||
+    n.includes('bpc') || n.includes('tb-') || n.includes('thymosin') || n.includes('ipamorelin') ||
+    n.includes('cjc') || n.includes('tesamorelin') || n.includes('sermorelin') || n.includes('mots') ||
+    n.includes('aod') || n.includes('selank') || n.includes('semax') || n.includes('dsip') ||
+    n.includes('kisspeptin') || n.includes('epithalon') || n.includes('glutathione') || n.includes('nad');
+}
+function renderTherapyIcons(container, items){
+  const sorted = (items||[]).slice().sort((a,b)=>{
+    const a1 = _isGLP1(a) ? 0 : (_isPeptideLike(a) ? 1 : 2);
+    const b1 = _isGLP1(b) ? 0 : (_isPeptideLike(b) ? 1 : 2);
+    if (a1!==b1) return a1-b1;
+    return (a.name||'').localeCompare(b.name||'');
+  });
+  container.innerHTML = `
+    <div class="therapy-grid" role="list">
+      ${sorted.map(it => `
+        <div class="therapy-tile" role="listitem" title="${it.name}">
+          <div class="therapy-icon">
+            <img src="${it.image}" alt="${it.name}">
+          </div>
+          <div class="therapy-name">${it.name}</div>
+          <div class="therapy-meta">${it.form || ''}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCatalog({items, mountId, showProgram=false, enableSearch=true, programSections=true, layout="cards"} = {}) {
   const mount = document.getElementById(mountId);
   if (!mount) return;
 
-  const groups = groupItems(items);
+  // If URL includes ?program=..., isolate therapies to that program (used by homepage deep-links)
+  const filteredInfo = filterItemsByProgramParam(items);
+  items = filteredInfo.items;
+
+  if ((layout || "").toLowerCase() === "icons") {
+    // Icons view is a zoomed-out therapies list (GLP-1s first, then peptides/experimental)
+    // If program filter is present, only render those therapies.
+    if (filteredInfo.label) {
+      mount.innerHTML = `
+        <div class="catalog-subhead">
+          <a class="smalllink" href="products.html">← All Therapies</a>
+          <h2>${filteredInfo.label}</h2>
+          <p class="muted">Showing therapies in this track.</p>
+        </div>
+        <div id="therapyIconMount"></div>
+      `;
+      const inner = mount.querySelector("#therapyIconMount");
+      renderTherapyIcons(inner, items);
+      return;
+    }
+    renderTherapyIcons(mount, items);
+    return;
+  }
+const groups = groupItems(items);
 
   const programs = [...new Set(groups.map(g => g.program))].sort((a,b)=>{
     const order = [
@@ -160,6 +273,11 @@ function renderCatalog({items, mountId, showProgram=false, enableSearch=true, pr
     return ia - ib;
   });
   const state = {q:'', program:'All'};
+  const urlProg = getProgramFilterFromUrl();
+  const lockProgram = !!urlProg;
+  if (lockProgram && urlProg && !urlProg.startsWith('__')) state.program = urlProg;
+  if (lockProgram && urlProg === '__PEPTIDES__') state.program = 'All';
+  if (lockProgram && urlProg === '__WELLNESS__') state.program = 'All';
 
   const search = el('input', {class:'catalog-search', placeholder:'Search therapies, compounds, peptides…', type:'search'});
   const filter = el('select', {class:'catalog-filter'});
@@ -168,7 +286,7 @@ function renderCatalog({items, mountId, showProgram=false, enableSearch=true, pr
 
   function apply() {
     const q = state.q.trim().toLowerCase();
-    const prog = state.program;
+    const prog = lockProgram ? 'All' : state.program;
     const filtered = groups.filter(g => {
       const matchesProg = prog === 'All' || g.program === prog;
       if (!matchesProg) return false;
@@ -178,6 +296,15 @@ function renderCatalog({items, mountId, showProgram=false, enableSearch=true, pr
     });
 
     mount.innerHTML = '';
+    if (lockProgram && filteredInfo.label) {
+      mount.append(el('div', {class:'catalog-subhead'}, [
+        el('a', {class:'smalllink', href:'programs.html'}, [document.createTextNode('← Programs')]),
+        el('h2', {}, [document.createTextNode(filteredInfo.label)]),
+        el('p', {class:'muted'}, [document.createTextNode('Showing therapies in this track.')])
+      ]));
+      mount.append(el('div', {class:'catalog-grid'}, filtered.map(g => renderCard(g, {showProgram:false}))));
+      return;
+    }
     if (programSections) {
       const byProg = new Map();
       filtered.forEach(g => {
@@ -196,7 +323,7 @@ function renderCatalog({items, mountId, showProgram=false, enableSearch=true, pr
   }
 
   if (enableSearch) {
-    const controls = el('div', {class:'catalog-controls'}, [search, filter]);
+    const controls = el('div', {class:'catalog-controls'}, [search, ...(lockProgram ? [] : [filter])]);
     mount.parentElement.insertBefore(controls, mount);
     search.addEventListener('input', (e)=>{ state.q = e.target.value; apply(); });
     filter.addEventListener('change', (e)=>{ state.program = e.target.value; apply(); });

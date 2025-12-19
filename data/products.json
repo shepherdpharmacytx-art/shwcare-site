@@ -1069,7 +1069,7 @@
   },
   {
     "id": "tretinoin",
-    "program": "Acne & Hormonal Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Tretinoin",
     "rxName": "Tretinoin",
     "stage": null,
@@ -1091,7 +1091,7 @@
   },
   {
     "id": "spironolactone",
-    "program": "Acne & Hormonal Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Spironolactone \u2014 (Topical)",
     "rxName": "Spironolactone (Topical)",
     "stage": null,
@@ -1113,7 +1113,7 @@
   },
   {
     "id": "dapsone",
-    "program": "Acne & Hormonal Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Dapsone \u2014 (Topical)",
     "rxName": "Dapsone (Topical)",
     "stage": null,
@@ -1135,7 +1135,7 @@
   },
   {
     "id": "clindamycin",
-    "program": "Acne & Hormonal Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Clindamycin \u2014 (Topical)",
     "rxName": "Clindamycin (Topical)",
     "stage": null,
@@ -1157,7 +1157,7 @@
   },
   {
     "id": "azelaic-acid",
-    "program": "Acne & Hormonal Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Azelaic Acid",
     "rxName": "Azelaic Acid",
     "stage": null,
@@ -1179,7 +1179,7 @@
   },
   {
     "id": "hydroquinone",
-    "program": "Pigmentation & Melasma",
+    "program": "Dermatology & Aesthetics",
     "name": "Hydroquinone",
     "rxName": "Hydroquinone",
     "stage": null,
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "kojic-acid",
-    "program": "Pigmentation & Melasma",
+    "program": "Dermatology & Aesthetics",
     "name": "Kojic Acid",
     "rxName": "Kojic Acid",
     "stage": null,
@@ -1223,7 +1223,7 @@
   },
   {
     "id": "tretinoin",
-    "program": "Pigmentation & Melasma",
+    "program": "Dermatology & Aesthetics",
     "name": "Tretinoin \u2014 (Pigmentation Regimens)",
     "rxName": "Tretinoin (Pigmentation Regimens)",
     "stage": null,
@@ -1245,7 +1245,7 @@
   },
   {
     "id": "azelaic-acid",
-    "program": "Pigmentation & Melasma",
+    "program": "Dermatology & Aesthetics",
     "name": "Azelaic Acid \u2014 (High Strength)",
     "rxName": "Azelaic Acid (High Strength)",
     "stage": null,
@@ -1267,7 +1267,7 @@
   },
   {
     "id": "tretinoin",
-    "program": "Anti-Aging & Skin Rejuvenation",
+    "program": "Dermatology & Aesthetics",
     "name": "Tretinoin \u2014 (Anti-Aging)",
     "rxName": "Tretinoin (Anti-Aging)",
     "stage": null,
@@ -1289,7 +1289,7 @@
   },
   {
     "id": "niacinamide",
-    "program": "Anti-Aging & Skin Rejuvenation",
+    "program": "Dermatology & Aesthetics",
     "name": "Niacinamide",
     "rxName": "Niacinamide",
     "stage": null,
@@ -1311,7 +1311,7 @@
   },
   {
     "id": "ghk-cu",
-    "program": "Anti-Aging & Skin Rejuvenation",
+    "program": "Dermatology & Aesthetics",
     "name": "GHK-Cu \u2014 (Copper Peptide)",
     "rxName": "GHK-Cu (Copper Peptide)",
     "stage": null,
@@ -1334,7 +1334,7 @@
   },
   {
     "id": "resveratrol",
-    "program": "Anti-Aging & Skin Rejuvenation",
+    "program": "Dermatology & Aesthetics",
     "name": "Resveratrol",
     "rxName": "Resveratrol",
     "stage": null,
@@ -1356,7 +1356,7 @@
   },
   {
     "id": "hyaluronic-acid",
-    "program": "Anti-Aging & Skin Rejuvenation",
+    "program": "Dermatology & Aesthetics",
     "name": "Hyaluronic Acid",
     "rxName": "Hyaluronic Acid",
     "stage": null,
@@ -1532,7 +1532,7 @@
   },
   {
     "id": "tacrolimus",
-    "program": "Eczema & Inflammatory Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Tacrolimus",
     "rxName": "Tacrolimus",
     "stage": null,
@@ -1554,7 +1554,7 @@
   },
   {
     "id": "desonide",
-    "program": "Eczema & Inflammatory Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Desonide",
     "rxName": "Desonide",
     "stage": null,
@@ -1576,7 +1576,7 @@
   },
   {
     "id": "hydrocortisone",
-    "program": "Eczema & Inflammatory Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Hydrocortisone",
     "rxName": "Hydrocortisone",
     "stage": null,
@@ -1598,7 +1598,7 @@
   },
   {
     "id": "clobetasol",
-    "program": "Eczema & Inflammatory Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Clobetasol",
     "rxName": "Clobetasol",
     "stage": null,
@@ -1620,7 +1620,7 @@
   },
   {
     "id": "urea",
-    "program": "Eczema & Inflammatory Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Urea",
     "rxName": "Urea",
     "stage": null,
@@ -1642,7 +1642,7 @@
   },
   {
     "id": "coal-tar",
-    "program": "Psoriasis & Keratin Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Coal Tar",
     "rxName": "Coal Tar",
     "stage": null,
@@ -1664,7 +1664,7 @@
   },
   {
     "id": "calcipotriene",
-    "program": "Psoriasis & Keratin Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Calcipotriene",
     "rxName": "Calcipotriene",
     "stage": null,
@@ -1686,7 +1686,7 @@
   },
   {
     "id": "fluorouracil",
-    "program": "Psoriasis & Keratin Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Fluorouracil \u2014 (5-FU)",
     "rxName": "Fluorouracil (5-FU)",
     "stage": null,
@@ -1708,7 +1708,7 @@
   },
   {
     "id": "terbinafine",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Terbinafine",
     "rxName": "Terbinafine",
     "stage": null,
@@ -1730,7 +1730,7 @@
   },
   {
     "id": "ciclopirox",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Ciclopirox",
     "rxName": "Ciclopirox",
     "stage": null,
@@ -1752,7 +1752,7 @@
   },
   {
     "id": "ketoconazole",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Ketoconazole",
     "rxName": "Ketoconazole",
     "stage": null,
@@ -1774,7 +1774,7 @@
   },
   {
     "id": "mupirocin",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Mupirocin",
     "rxName": "Mupirocin",
     "stage": null,
@@ -1796,7 +1796,7 @@
   },
   {
     "id": "ciprofloxacin",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Ciprofloxacin",
     "rxName": "Ciprofloxacin",
     "stage": null,
@@ -1818,7 +1818,7 @@
   },
   {
     "id": "acyclovir",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Acyclovir",
     "rxName": "Acyclovir",
     "stage": null,
@@ -1840,7 +1840,7 @@
   },
   {
     "id": "valacyclovir",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Valacyclovir",
     "rxName": "Valacyclovir",
     "stage": null,
@@ -1862,7 +1862,7 @@
   },
   {
     "id": "cidofovir",
-    "program": "Infectious Dermatology",
+    "program": "Dermatology & Aesthetics",
     "name": "Cidofovir",
     "rxName": "Cidofovir",
     "stage": null,
@@ -1884,7 +1884,7 @@
   },
   {
     "id": "salicylic-acid",
-    "program": "Warts & Molluscum",
+    "program": "Dermatology & Aesthetics",
     "name": "Salicylic Acid",
     "rxName": "Salicylic Acid",
     "stage": null,
@@ -1906,7 +1906,7 @@
   },
   {
     "id": "fluorouracil",
-    "program": "Warts & Molluscum",
+    "program": "Dermatology & Aesthetics",
     "name": "Fluorouracil \u2014 (5-FU)",
     "rxName": "Fluorouracil (5-FU)",
     "stage": null,
@@ -1928,7 +1928,7 @@
   },
   {
     "id": "imiquimod",
-    "program": "Warts & Molluscum",
+    "program": "Dermatology & Aesthetics",
     "name": "Imiquimod",
     "rxName": "Imiquimod",
     "stage": null,
@@ -1994,7 +1994,7 @@
   },
   {
     "id": "terbinafine",
-    "program": "Nail Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Terbinafine \u2014 (Nail)",
     "rxName": "Terbinafine (Nail)",
     "stage": null,
@@ -2016,7 +2016,7 @@
   },
   {
     "id": "ciclopirox",
-    "program": "Nail Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Ciclopirox \u2014 (Nail)",
     "rxName": "Ciclopirox (Nail)",
     "stage": null,
@@ -2038,7 +2038,7 @@
   },
   {
     "id": "tavaborole",
-    "program": "Nail Disorders",
+    "program": "Dermatology & Aesthetics",
     "name": "Tavaborole",
     "rxName": "Tavaborole",
     "stage": null,
@@ -2060,7 +2060,7 @@
   },
   {
     "id": "gabapentin",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Gabapentin \u2014 (Topical)",
     "rxName": "Gabapentin (Topical)",
     "stage": null,
@@ -2082,7 +2082,7 @@
   },
   {
     "id": "lidocaine",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Lidocaine \u2014 (Topical)",
     "rxName": "Lidocaine (Topical)",
     "stage": null,
@@ -2104,7 +2104,7 @@
   },
   {
     "id": "amitriptyline",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Amitriptyline \u2014 (Topical)",
     "rxName": "Amitriptyline (Topical)",
     "stage": null,
@@ -2126,7 +2126,7 @@
   },
   {
     "id": "diclofenac",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Diclofenac \u2014 (Topical)",
     "rxName": "Diclofenac (Topical)",
     "stage": null,
@@ -2148,7 +2148,7 @@
   },
   {
     "id": "ketoprofen",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Ketoprofen \u2014 (Topical)",
     "rxName": "Ketoprofen (Topical)",
     "stage": null,
@@ -2170,7 +2170,7 @@
   },
   {
     "id": "low-dose-naltrexone",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Low-Dose Naltrexone \u2014 (LDN)",
     "rxName": "Low-Dose Naltrexone (LDN)",
     "stage": null,
@@ -2192,7 +2192,7 @@
   },
   {
     "id": "magnesium-injection",
-    "program": "Pain, Pruritus & Neuropathic Skin",
+    "program": "Dermatology & Aesthetics",
     "name": "Magnesium Injection",
     "rxName": "Magnesium Injection",
     "stage": null,
